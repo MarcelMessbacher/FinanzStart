@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FinanzStart</title>
+    <meta name="description" content="FinanzStart – Learn financial responsibility through an interactive game." />
+    <style>
+      :root { color-scheme: light dark; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+          "Apple Color Emoji", "Segoe UI Emoji";
+        line-height: 1.5;
+        color: #111827;
+        background: #ffffff;
+      }
+      .container { max-width: 48rem; padding: 3rem 1.5rem; margin: 0 auto; }
+      h1 { font-size: 2.25rem; line-height: 2.5rem; font-weight: 700; margin: 0 0 0.5rem; }
+      p.lead { font-size: 1.125rem; color: #4b5563; margin: 0.5rem 0 1.5rem; }
+      .actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .btn-primary { background: #4f46e5; color: #fff; }
+      .btn-primary:hover { background: #4338ca; }
+      .btn-outline { border: 1px solid #d1d5db; color: #111827; }
+      .btn-outline:hover { background: #f9fafb; }
+      h2 { font-size: 1.5rem; font-weight: 700; margin: 2rem 0 0.5rem; }
+      ul { margin: 0.5rem 0 0; padding-left: 1.25rem; color: #374151; }
+      li { margin: 0.25rem 0; }
+      .note { margin-top: 2rem; font-size: 0.95rem; color: #6b7280; }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section>
+        <h1>FinanzStart</h1>
+        <p class="lead">
+          Welcome to FinanzStart, your easy way to learn financial responsibility and start your journey
+          to your personal financial freedom.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="game/">Start Game</a>
+          <a class="btn btn-outline" href="leaderboard/">Leaderboards</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>About the game</h2>
+        <p>
+          Every player starts at the same place. Fresh out of High School you can choose your career path.
+          Your decisions during the game will lead you to financial success or financial failure. Choose wisely.
+        </p>
+        <ul>
+          <li>Confirm each month to age and apply income, expenses, and events</li>
+          <li>Study with side jobs, or start working right away</li>
+          <li>Manage housing, living costs, and investments to reach FI</li>
+          <li>Hit FI to submit your result to the leaderboards</li>
+        </ul>
+        <p class="note">
+          Note: If you are deploying via GitHub Pages, the dynamic API endpoints in this project are not available
+          on Pages. The landing, game, and leaderboard pages can be exported as static files.
+        </p>
+      </section>
+    </main>
+  </body>
+  </html>
+
+
