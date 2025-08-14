@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",
-    "export": "prisma generate && next build && next export -o docs",
+    "export": "prisma generate && next build && node scripts/export-to-docs.mjs",
     "start": "next start",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev --name init",
