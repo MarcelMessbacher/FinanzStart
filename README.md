@@ -19,6 +19,11 @@ Getting started:
 3) `npx prisma db push` (optional to create SQLite for persistent leaderboards)
 4) `npm run dev`
 
+GitHub Pages (static export):
+- `npm run export` → outputs static site to `docs/` (required Pages folder)
+- Commit and push, then set Pages source to the root `/docs` folder on the default branch
+- Note: API routes (e.g. `/api/leaderboard`) are not available on Pages
+
 Endpoints:
 - `/` Landing page
 - `/game` Game UI
@@ -26,4 +31,9 @@ Endpoints:
 
 Environment:
 - `DATABASE_URL="file:./dev.db"` for Prisma SQLite
+
+Deploying to GitHub Pages:
+- Update `next.config.mjs` `basePath` and `assetPrefix` to match your repo name if it differs from `FinanzStart`.
+- Run `npm run export` to generate `docs/`.
+- In GitHub settings, set Pages source to `Deploy from a branch` → default branch → `/docs` folder.
 
